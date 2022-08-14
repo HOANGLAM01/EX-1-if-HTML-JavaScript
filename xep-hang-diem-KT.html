@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var scoreKT1 = prompt("Nhập điểm kt");
+  var scoreKT2 = prompt("Nhập điểm thi giữa kỳ");
+  var scoreKT3 = prompt("Nhập điểm thi cuối kỳ");
+  ScoreKT01 = parseInt(scoreKT1);
+  ScoreKT02 = parseInt(scoreKT2);
+  ScoreKT03 = parseInt(scoreKT3);
+  averge = (ScoreKT01 + ScoreKT02*2 + ScoreKT03*3)/6
+  rank = null
+  if ( averge >= 8)
+      rank ="Học sinh giỏi";
+  else if (averge >= 6.5)
+      rank ="Học sinh khá giỏi";
+        else if (averge >= 5)
+            rank ="Học sinh trung bình";
+            else if (averge >= 3.5)
+                rank ="Học sinh trung bình yếu";
+                else
+                    rank ="Học sinh yếu kém";
+
+
+
+
+document.writeln(rank)
+</script>
+</body>
+</html>
