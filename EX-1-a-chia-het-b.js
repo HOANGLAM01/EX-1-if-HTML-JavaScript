@@ -1,9 +1,9 @@
-function calculate() {
-    var a = parseInt(document.getElementById("number1"));
-    var b = parseInt(document.getElementById("number2"));
+var number1 = prompt("nhập số chia");
+var number2 = prompt("nhập số bị chia");
+    let a = parseInt(number1);
+    let b = parseInt(number2);
     let result = a % b;
     if (parseInt(result) == 0)
-        document.writeln("chia hết")
+        document.writeln("chia hết");
     else
-        document.writeln("không chia hết")
-}
+        document.writeln("ko chia hết");
